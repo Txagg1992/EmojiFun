@@ -101,6 +101,7 @@ fun EmojiListScreen(
         EmojiDialog(
             emojiListItem = selectedItem.value!!,
             onDismiss = {
+                viewModel.dismissDialog()
                 showDialog.value = false
             },
             onNavigateClick = { slug ->
