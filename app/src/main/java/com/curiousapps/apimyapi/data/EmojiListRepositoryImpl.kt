@@ -26,6 +26,13 @@ class EmojiListRepositoryImpl @Inject constructor(
                 .let {
                     return Result.success(it)
                 }
+//            api.doNetworkCall()
+//                .filter { !it.name.isNullOrEmpty() }
+//                .sortedBy { it.id.inc() }
+//                .sortedBy { it.listId.inc() }
+//                .let {
+//                    return Result.success(it)
+//                }
         }catch (ex: IOException){
             return Result.failure(ex)
         }
